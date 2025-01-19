@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Panel</title>
+    <link rel="stylesheet" href="faculty.css">
+</head>
+<body>
+    <header class="header">
+        <div class="banner">Faculty Panel</div>
+        <div class="menu-icon" onclick="toggleSidebar()">☰</div> <!-- Menu button -->
+        
+    </header>
+
+    <div class="sidebar">
+        <div class="faculty-info">
+            <div class="icon">👨‍🏫</div>
+            <div class="username" id="username">Username</div>
+        </div>
+        <ul class="menu">
+            <li><a href="timetable.html">Time Table</a></li>
+            <li><a href="login.html">Log Out</a></li>
+        </ul>
+    </div>
+
+    <main class="main-content">
+        <!-- Class VI Section -->
+        <div class="container">
+            <h2>Class VI</h2>
+            <ul class="subjects-list">
+                <li onclick="redirectTo('history6.html')">History</li>
+                <li onclick="redirectTo('maths6.html')">Maths</li>
+                <li onclick="redirectTo('science6.html')">Science</li>
+                <li onclick="redirectTo('english6.html')">English</li>
+            </ul>
+        </div>
+    
+        <!-- Class VII Section -->
+        <div class="container">
+            <h2>Class VII</h2>
+            <ul class="subjects-list">
+                <li onclick="redirectTo('history7.html')">History</li>
+                <li onclick="redirectTo('maths7.html')">Maths</li>
+                <li onclick="redirectTo('science7.html')">Science</li>
+                <li onclick="redirectTo('english7.html')">English</li>
+            </ul>
+        </div>
+    
+        <!-- Class VIII Section -->
+        <div class="container">
+            <h2>Class VIII</h2>
+            <ul class="subjects-list">
+                <li onclick="redirectTo('history8.html')">History</li>
+                <li onclick="redirectTo('maths8.html')">Maths</li>
+                <li onclick="redirectTo('science8.html')">Science</li>
+                <li onclick="redirectTo('english8.html')">English</li>
+            </ul>
+        </div>
+    
+        <!-- Class IX Section -->
+        <div class="container">
+            <h2>Class IX</h2>
+            <ul class="subjects-list">
+                <li onclick="redirectTo('history_class9.html')">History</li>
+                <li onclick="redirectTo('maths_class9.html')">Maths</li>
+                <li onclick="redirectTo('science_class9.html')">Science</li>
+                <li onclick="redirectTo('english_class9.html')">English</li>
+            </ul>
+        </div>
+    </main>
+    
+
+    <script>
+        function redirectTo(page) {
+    window.location.href = page;
+}
+
+    
+    function toggleSidebar() {
+        const sidebar = document.querySelector('.sidebar');
+        const currentLeft = window.getComputedStyle(sidebar).left;
+
+        if (currentLeft === '0px') {
+            sidebar.style.left = '-250px'; // Hide the sidebar
+        } else {
+            sidebar.style.left = '0'; // Show the sidebar
+        }
+    }
+    </script>
+    <div class="banner2">
+        <p>© 2025 Attenda • <a href="#">Site map</a> • <a href="#">Community guidelines</a> • <a href="#">Terms of service</a></p>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Time Table</title>
+    <link rel="stylesheet" href="timetable.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="banner">Weekly Time Table</div>
+        <div class="back-icon" onclick="goBack()">←</div> <!-- Back icon -->
+    </header>
+
+    <div class="container">
+        <h2>Teacher's Weekly Time Table</h2>
+        <table id="timetable">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Class VI</th>
+                    <th>Class VII</th>
+                    <th>Class VIII</th>
+                    <th>Class IX</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td><span>Math</span></td>
+                    <td><span>Science</span></td>
+                    <td><span>History</span></td>
+                    <td><span>English</span></td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td><span>English</span></td>
+                    <td><span>Math</span></td>
+                    <td><span>Geography</span></td>
+                    <td><span>Science</span></td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td><span>Science</span></td>
+                    <td><span>History</span></td>
+                    <td><span>Math</span></td>
+                    <td><span>Geography</span></td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td><span>History</span></td>
+                    <td><span>Geography</span></td>
+                    <td><span>English</span></td>
+                    <td><span>Math</span></td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td><span>Geography</span></td>
+                    <td><span>Science</span></td>
+                    <td><span>Math</span></td>
+                    <td><span>History</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button onclick="editTimetable()">Edit Time Table</button>
+    </div>
+
+    <script src="timetable.js"></script>
+</body>
+</html>

@@ -21,16 +21,15 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
     // Redirect to another page
     switch (role) {
-        case 'admin':
-            window.location.href = 'admin-dashboard.html';
-            break;
+    
         case 'student':
             window.location.href = 'student-dashboard.html';
             break;
         case 'faculty':
-            window.location.href = 'faculty-dashboard.html';
+            window.location.href = 'faculty.html';
             break;
         default:
             alert('Invalid role selected.');
             break;
+    }
 });

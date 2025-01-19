@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Management</title>
+    <link rel="stylesheet" href="history6.css">
+</head>
+<body>
+    <h1>Class Management</h1>
+    <div class="back-icon" onclick="goBack()">←</div> <!-- Back icon -->
+
+    <section>
+        <h2>Attendance for Subject: <span id="subject">History</span></h2>
+
+        <div class="date-selector">
+            <label for="attendanceDate">Select Date:</label>
+            <input type="date" id="attendanceDate">
+        </div>
+
+        <table id="attendanceTable">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Student Name</th>
+                    <th>Present</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>A</td>
+                    <td><input type="checkbox" class="attendance" data-id="1"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>B</td>
+                    <td><input type="checkbox" class="attendance" data-id="2"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>C</td>
+                    <td><input type="checkbox" class="attendance" data-id="3"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>D</td>
+                    <td><input type="checkbox" class="attendance" data-id="4"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="summary">
+            <p>Total Students: <span id="totalStudents">4</span></p>
+            <p>Present Students: <span id="presentCount">0</span></p>
+            <p>Absent Students: <span id="absentCount">4</span></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Assignment Submission</h2>
+
+        <table id="assignmentTable">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Student Name</th>
+                    <th>Submitted</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>A</td>
+                    <td><input type="checkbox" class="assignment" data-id="1"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>B</td>
+                    <td><input type="checkbox" class="assignment" data-id="2"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>C</td>
+                    <td><input type="checkbox" class="assignment" data-id="3"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>D</td>
+                    <td><input type="checkbox" class="assignment" data-id="4"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="summary">
+            <p>Total Students: <span id="totalStudentsAssignment">4</span></p>
+            <p>Submitted: <span id="submittedCount">0</span></p>
+            <p>Not Submitted: <span id="notSubmittedCount">4</span></p>
+        </div>
+    </section>
+
+    <button class="btn" onclick="saveAttendance()">Save Attendance</button>
+    <button class="btn" onclick="saveAssignment()">Save Assignment Submission</button>
+
+    <script src="history6.js"></script>
+</body>
+</html>
