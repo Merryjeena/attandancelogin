@@ -1,0 +1,222 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #d4b5e8;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.banner {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    background-color: #ecdff2;
+    position: fixed;
+    height: 100%;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    top: 0;
+    left: -350px;
+    transition: right 0.3s ease;
+}
+
+/* Menu Button Styles */
+.menu-icon {
+    position: absolute;
+    left: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    display: block;
+}
+
+.student-info {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.student-info .icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.username {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 20px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #6a4d91;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #4d2c6e;
+}
+
+/* Centered Container for Overall Attendance */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: calc(100vh - 200px); /* Adjust height to account for header and footer */
+    margin: 0 auto;
+}
+
+.container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.container a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #e691ec;
+    background-color: #c5a3ff; /* Button-like appearance */
+    border-radius: 6px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container a:hover {
+    background-color: #a384d6; /* Darker lavender */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Elevated shadow effect */
+}
+/* Section Styles */
+section {
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    background: #fff; /* White card background */
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Light card shadow */
+    color: #333;
+}
+
+/* Button */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #c5a3ff; /* Pastel lavender button */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #a384d6; /* Slightly darker lavender */
+    outline: 2px solid #ffb3c1; /* Pastel pink outline */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Elevated shadow effect */
+}
+
+/* Table Styles */
+.table-container {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-size: 16px;
+    text-align: left;
+    background-color: #ffffff; /* White background */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Table shadow */
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #eee; /* Soft border */
+}
+
+th {
+    background-color: #a5d8ff; /* Pastel blue header */
+    color: #333; /* Darker text for contrast */
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #e3f7ff; /* Light pastel blue for even rows */
+}
+
+tr:nth-child(odd) {
+    background-color: #fefefe; /* Very light gray for odd rows */
+}
+
+tr:hover {
+    background-color: #ffe5e5; /* Pastel peach hover effect */
+    outline: 2px solid #c5a3ff; /* Lavender outline on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Elevated shadow effect */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+
+
+/* Button */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #c5a3ff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #a384d6;
+    outline: 2px solid #ffb3c1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.banner2 {
+    font-size: 14px;
+    text-align: center;
+    background-color: #f8f4f9;
+    color: #555;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}

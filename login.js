@@ -23,7 +23,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     switch (role) {
     
         case 'student':
-            window.location.href = 'student-dashboard.html';
+            window.location.href = 'student.html';
             break;
         case 'faculty':
             window.location.href = 'faculty.html';

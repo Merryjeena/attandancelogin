@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance</title>
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>
+
+        <header class="header">
+            <div class="banner">Student Panel</div>
+            <div class="menu-icon" onclick="toggleSidebar()">☰</div> <!-- Menu button -->
+            
+        </header>
+    
+        <div class="sidebar">
+            <div class="student-info">
+                <div class="icon">👩‍🎓</div>
+                <div class="username" id="username">ABC</div>
+            </div>
+            <ul class="menu">
+                <li><a href="stdtimetable.html">Time Table</a></li>
+                <li><a href="login.html">Log Out</a></li>
+            </ul>
+        </div>
+
+        <div id="overall-attendance" class="container">
+            <h2>Overall Attendance</h2>
+            <button id="viewAttendanceBtn">Check Attendance</button>
+        <div id="attendance-table" class="table-container"></div>
+
+        </div>
+        
+    <div class="banner2">
+        <p>© 2025 Attenda • <a href="#">Site map</a> • <a href="#">Community guidelines</a> • <a href="#">Terms of service</a></p>
+    </div>
+
+    <script src="student.js"></script>
+</body>
+</html>
